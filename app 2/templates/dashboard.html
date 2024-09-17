@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<p>Here are your partitions:</p>
+<ul>
+    {% for partition in partitions %}
+        <li>{{ partition }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
